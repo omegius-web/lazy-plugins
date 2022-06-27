@@ -42,7 +42,7 @@
 или
 ```html
 <script>
-    class IGWDPluginMap{compress code............
+    class owLazyPlugin{compress code............
 </script>
 ```
 
@@ -51,7 +51,7 @@
 Добавляем в подвал сайта.
 ```html
 <script>
-    const iGWDPluginMap = new IGWDPluginMap({
+    const lazyPluginMap = new owLazyPlugin({
         'gcaptcha': {
             'src': 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit',
             'selectors': [
@@ -67,7 +67,7 @@
         }
     }, true);
 
-    iGWDPluginMap.init();
+    lazyPluginMap.init();
 </script>
 ```
 
@@ -120,7 +120,7 @@ document.addEventListener("onload-plugin-slider", function() {
         <footer>Some blocks</footer>
 
         <script>
-            const iGWDPluginMap = new IGWDPluginMap({
+            const lazyPluginMap = new owLazyPlugin({
                 'select': {
                     'src': './js/select.js',
                     'selectors': [
@@ -130,7 +130,7 @@ document.addEventListener("onload-plugin-slider", function() {
                 }
             });
 
-            iGWDPluginMap.init();
+            lazyPluginMap.init();
         </script>
     </body>
 </html>
